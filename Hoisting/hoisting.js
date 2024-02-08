@@ -7,10 +7,7 @@
 // let l=5;
 // console.log(l);
 
-// console.log(c);//Error: Cannot access 'c' before initialization
-// const c=true;
-// console.log(c);
+console.log(c);//Error: Cannot access 'c' before initialization
+const c=true;
+console.log(c);
 
-x=1;
-alert("x="+x);
-var x;
