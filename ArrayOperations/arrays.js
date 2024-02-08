@@ -1,0 +1,12 @@
+const arr=[];
+arr[0]=1;
+arr[1]=2;
+arr[2]=3;
+arr[3]=4;
+arr[4]=5;
+console.log("the length of an array is: "+arr.length);
+console.log(arr[0]);
+console.log(arr[1]);
+console.log(arr[2]);
+console.log(arr[3]);
+console.log(arr[4]);
