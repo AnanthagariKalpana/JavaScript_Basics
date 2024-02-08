@@ -1,3 +1,4 @@
+//1.........
 // function abc()
 // {
 //     console.log("abc function")
@@ -18,6 +19,8 @@
 // xyz().then((result)=>console.log("after resolve.......",result))
 //     .catch((error)=>console.log("After rejected.........",error))
 
+
+//2.............
 // function add(a,b)
 // {
 //     console.log(a+b);
@@ -41,6 +44,8 @@
 // addOpe().then((res)=>console.log(res,"\nA and B are equal........"))
 //     .catch((error)=>console.log(error,"\nPromises rejected......."))
 
+
+//3.................
 function funAsync()
 {
     return new Promise((resolve, reject) => {
