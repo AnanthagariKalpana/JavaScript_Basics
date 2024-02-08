@@ -35,3 +35,24 @@ function f1()
     console.log(res1);
 }
 asyncFun()
+
+//3.........
+ function add(a)
+{
+    return new Promise((resolve) => {
+        setTimeout(()=>{
+            resolve(a);
+        },4000);
+    });
+}
+async function asyncFun1()
+{
+    console.log("Start.....")
+    const result1= await add(5)
+    const result2=await add(10)
+    console.log(result1);
+    console.log(result2);
+    console.log("End.......")
+
+}
+asyncFun1()
