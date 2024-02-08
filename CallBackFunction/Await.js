@@ -59,24 +59,45 @@ callBack();
 
 
 //4.......
-function rejectAfter()
+// function rejectAfter()
+// {
+//     return new Promise((resolve, reject) => {
+//         setTimeout(()=>{
+//             reject("Promises is rejected")
+//         });
+//     },5000);
+// }
+// async function asyncReject()
+// {
+//     try{
+//     console.log("started 4......");
+//     const res=await rejectAfter();
+//     console.log(res);
+//     console.log("4 Ended.....")
+//     }
+//     catch{
+//         console.log("4......error ")
+//     }
+// }
+// asyncReject();
+
+//5.........
+function opt()
 {
     return new Promise((resolve, reject) => {
-        setTimeout(()=>{
-            reject("Promises is rejected")
-        });
-    },5000);
+        reject(new Error(message));
+    })
 }
-async function asyncReject()
+async function optFun()
 {
     try{
-    console.log("started 4......");
-    const res=await rejectAfter();
-    console.log(res);
-    console.log("4 Ended.....")
+        console.log("started 5.......");
+        const meg=await opt();
+        console.log("5...Ended");
     }
-    catch{
-        console.log("4......error ")
+    catch(error)
+    {
+        console.log("Error: ",error.message)
     }
 }
-asyncReject();
+optFun();
