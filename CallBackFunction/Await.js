@@ -20,39 +20,63 @@ async function callBack()
 callBack();
 
 //2.........
-function f1()
+// function f1()
+// {
+//     return new Promise((resolve, reject) => {
+//         setTimeout(()=>{
+//             resolve("f1 is resolved");
+//         },2000);
+//     });
+// }
+//  async function asyncFun()
+// {
+//     console.log("Asyncfun is started")
+//     const res1=await f1()
+//     console.log(res1);
+// }
+// asyncFun()
+
+//3.........
+//  function add(a)
+// {
+//     return new Promise((resolve) => {
+//         setTimeout(()=>{
+//             resolve(a);
+//         },4000);
+//     });
+// }
+// async function asyncFun1()
+// {
+//     console.log("Start.....")
+//     const result1= await add(5)
+//     const result2=await add(10)
+//     console.log(result1);
+//     console.log(result2);
+//     console.log("End.......")
+
+// }
+// asyncFun1()
+
+
+//4.......
+function rejectAfter()
 {
     return new Promise((resolve, reject) => {
         setTimeout(()=>{
-            resolve("f1 is resolved");
-        },2000);
-    });
+            reject("Promises is rejected")
+        });
+    },5000);
 }
- async function asyncFun()
+async function asyncReject()
 {
-    console.log("Asyncfun is started")
-    const res1=await f1()
-    console.log(res1);
+    try{
+    console.log("started 4......");
+    const res=await rejectAfter();
+    console.log(res);
+    console.log("4 Ended.....")
+    }
+    catch{
+        console.log("4......error ")
+    }
 }
-asyncFun()
-
-//3.........
- function add(a)
-{
-    return new Promise((resolve) => {
-        setTimeout(()=>{
-            resolve(a);
-        },4000);
-    });
-}
-async function asyncFun1()
-{
-    console.log("Start.....")
-    const result1= await add(5)
-    const result2=await add(10)
-    console.log(result1);
-    console.log(result2);
-    console.log("End.......")
-
-}
-asyncFun1()
+asyncReject();
