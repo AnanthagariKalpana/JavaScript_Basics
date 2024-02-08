@@ -35,3 +35,13 @@ function cal(a,b,callback)
     return callback(a,b)
 }
 console.log(cal(10,20,add))
+
+function main()
+{
+    return "main function";
+}
+function f1(callback)
+{
+    console.log( callback());
+}
+f1(main)
