@@ -91,3 +91,10 @@ const array1=[1,2,3];
 const array2=[4,5,6];
 console.log(array1.concat(array2))//Using concat method
 
+const str="hello"
+for(const char of str)
+{
+    console.log(char);
+}
+
+
