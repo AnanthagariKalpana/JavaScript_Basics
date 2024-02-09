@@ -20,3 +20,9 @@ console.log(b)
 const c=[1,5];
 const d=[2,...c,3,4];
 console.log(d);
+
+//4........
+const e=[10,50,-64,45];
+console.log( Math.max(...e) );
+const values = [11,87,25,55,-6,30];
+console.log( Math.max(...values) );
