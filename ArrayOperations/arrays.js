@@ -116,3 +116,19 @@ console.log(sp);//[ [ 'a', 'b' ], [], [ 'a', 'b', 'c' ] ]
 const a5=["ab","","abc"]
 const s=a4.flatMap(s=>s.split(''))
 console.log(s);//op:[ 'a', 'b', 'a', 'b', 'c' ]
+
+let arr = ['react', 'angular', 'vue'];
+ 
+if (arr.includes('react'))
+{
+    console.log('react existence');
+}
+
+let sun=["java","python","csharp"];
+if(sun.includes('testing'))
+{
+    console.log('testing Exists')
+}
+else{
+    console.log('testing not exists');
+}

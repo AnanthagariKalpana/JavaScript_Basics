@@ -60,3 +60,8 @@ console.log(st);
 //padEnd()
 const st1="kalpana ".padEnd(19,"Ananthagari")
 console.log(st1);
+//TrimStart()
+let s1="  Hello World!  ";
+console.log(s1.trimStart());
+let s2="  hello world!  ";
+console.log(s2.trimEnd())
