@@ -99,11 +99,20 @@ for(const char of str)
 
 //flat()
 const a1=[1,2,["one","two"]];
-console.log(a1.flat());
+console.log(a1.flat());//output:[ 1, 2, 'one', 'two' ]
 
 const a2=[1,2,["one","two",[5,6]]];
-console.log(a2.flat());
+console.log(a2.flat());//output:[ 1, 2, 'one', 'two', [ 5, 6 ] ]
 
 
 const a3=["kalpana","nandhu",[459,499,[90,86]]]
 console.log(a3.flat(2));
+
+//Split()
+const a4=["ab","","abc"]
+const sp=a4.map(s=>s.split(''))
+console.log(sp);//[ [ 'a', 'b' ], [], [ 'a', 'b', 'c' ] ]
+
+const a5=["ab","","abc"]
+const s=a4.flatMap(s=>s.split(''))
+console.log(s);

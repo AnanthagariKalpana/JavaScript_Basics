@@ -29,8 +29,19 @@ const values = [11,87,25,55,-6,30];
 console.log( Math.max(...values) );
 
 const myObg={
-    a1:1,b:2,c:3
+    a1:1,
+    b:2,
+    c:3
 };
-const { a1, ...r}=myObg
+const { a1, ...r}=myObg//destructuring the objects
 console.log(a1);
 console.log(r);
+
+//Object.fromEntries()
+
+const entries=new Map([
+    ["name","kalpana"],
+    ["age",23]
+]);
+const ob=Object.fromEntries(entries);
+console.log(ob);
