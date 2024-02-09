@@ -28,24 +28,24 @@
 
 
 //4.........creating array and performing the pop()
-const arr=[]
-arr.push(10);
-arr.push(20);
-arr.push(30);
-arr.unshift(40)//adds element to the beging of an array
-arr.splice(2,0,55);//insert the specific index
-arr.shift();//removes first Index Element
-arr.splice(2,1);//removes the 2index Ele
-for(let i=0;i<arr.length;i++)
-{
-    console.log(arr[i])
-}
+// const arr=[]
+// arr.push(10);
+// arr.push(20);
+// arr.push(30);
+// arr.unshift(40)//adds element to the beging of an array
+// arr.splice(2,0,55);//insert the specific index
+// arr.shift();//removes first Index Element
+// arr.splice(2,1);//removes the 2index Ele
+// for(let i=0;i<arr.length;i++)
+// {
+//     console.log(arr[i])
+// }
 
-//6..........Using FOR EACH Loop
-const colour=["red","yellow","green"]
-colour.forEach(colou => {
-    console.log(colou);
-});
+// //6..........Using FOR EACH Loop
+// const colour=["red","yellow","green"]
+// colour.forEach(colou => {
+//     console.log(colou);
+// });
 //console.log(arr[0]," ",arr[1]," ",arr[2]);
 //arr.pop();
 //console.log(arr[0]," ",arr[1]," ",arr[2]);
@@ -71,10 +71,23 @@ colour.forEach(colou => {
 // }
 
 //7............filter the arr with the given condtion
-const num=[1,2,10,3,4,5]
-let newarr=num.filter(ele =>ele>3)
-let newarr2=num.map(ele=>ele*ele);
-let newarr3=num.slice(2);
-console.log(newarr);
-console.log(newarr2);
-console.log(newarr3);
+// const num=[1,2,10,3,4,5]
+// let newarr=num.filter(ele =>ele>3)
+// let newarr2=num.map(ele=>ele*ele);
+// let newarr3=num.slice(2);
+// console.log(newarr);
+// console.log(newarr2);
+// console.log(newarr3);
+// let obg={
+//     name:'kalpana',
+// }
+const numbers=[1,2,3,4,5,];
+console.log(numbers.toString());//using toString()
+
+const fruits=["Apple"," Banana","orange"]
+console.log(fruits.join(','))//using join()
+
+const array1=[1,2,3];
+const array2=[4,5,6];
+console.log(array1.concat(array2))//Using concat method
+
