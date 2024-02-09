@@ -115,4 +115,4 @@ console.log(sp);//[ [ 'a', 'b' ], [], [ 'a', 'b', 'c' ] ]
 
 const a5=["ab","","abc"]
 const s=a4.flatMap(s=>s.split(''))
-console.log(s);
+console.log(s);//op:[ 'a', 'b', 'a', 'b', 'c' ]

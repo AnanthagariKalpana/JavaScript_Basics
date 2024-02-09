@@ -3,8 +3,12 @@ const student=
     name:'Mohan',
     age: 30
 };
-console.log("Name: " ,student.name);
-console.log("Age: ",student.age);
+// console.log("Name: " ,student.name);
+// console.log("Age: ",student.age);
+for(const key in student)
+{
+    console.log(key+':'+student[key]);
+}
 
 const person=
 {
@@ -12,9 +16,13 @@ const person=
     age: 23,
     profession :'developer'
 }
-console.log("Name: " ,person.name);
-console.log("Age: ",person.age);
-console.log("Profession: ",person.profession)
+// console.log("Name: " ,person.name);
+// console.log("Age: ",person.age);
+// console.log("Profession: ",person.profession)
+for( const per in person)
+{
+    console.log(per ,":",person[per]);
+}
 
 
 function fun(name, age, marks)

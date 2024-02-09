@@ -15,18 +15,18 @@ console.log(people);//[ 'kaveri', 'kalpana', 'nandhu', 'janu', 'sushna' ]
 //2.........
 const a=["one","five"]
 const b=["two",...a,"three","four"]
-console.log(b)
+console.log(b)//op: [ 'two', 'one', 'five', 'three', 'four' ]
 //3............
 const c=[1,5];
 const d=[2,...c,3,4];
-console.log(d);
+console.log(d);//op:[ 2, 1, 5, 3, 4 ]
 
 //4........
 const e=[10,50,-64,45];
-console.log( Math.max(...e) );
+console.log( Math.max(...e) );//50
 
 const values = [11,87,25,55,-6,30];
-console.log( Math.max(...values) );
+console.log( Math.max(...values) );//87
 
 const myObg={
     a1:1,
@@ -37,11 +37,26 @@ const { a1, ...r}=myObg//destructuring the objects
 console.log(a1);
 console.log(r);
 
-//Object.fromEntries()
+//Object.fromEntries():transformer into a list of Key Value Pair
 
 const entries=new Map([
     ["name","kalpana"],
     ["age",23]
 ]);
 const ob=Object.fromEntries(entries);
-console.log(ob);
+console.log(ob);//op:{ name: 'kalpana', age: 23 } 
+
+const ent=new Map([
+    ["food","Biriyani"],
+    ["drink","coc"]
+])
+const obj=Object.fromEntries(ent);
+console.log(ent);//op:Map(2) { 'food' => 'Biriyani', 'drink' => 'coc' }     
+console.log(obj);//{ food: 'Biriyani', drink: 'coc' }
+
+//padStart()
+const st="kalpana".padStart(19,"Ananthagari ");
+console.log(st);
+//padEnd()
+const st1="kalpana ".padEnd(19,"Ananthagari")
+console.log(st1);

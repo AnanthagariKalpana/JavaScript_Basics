@@ -25,5 +25,7 @@ class car extends vehivle
 }
 
 cr=new car();
+cr.start();
 cr.drive();
 cr.disp();
+cr.stop();
