@@ -1,3 +1,4 @@
+//Immediatly invoked function Expression
 (function(){
  var x=10;
  console.log(x);
