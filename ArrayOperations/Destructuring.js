@@ -24,5 +24,13 @@ console.log(d);
 //4........
 const e=[10,50,-64,45];
 console.log( Math.max(...e) );
+
 const values = [11,87,25,55,-6,30];
 console.log( Math.max(...values) );
+
+const myObg={
+    a1:1,b:2,c:3
+};
+const { a1, ...r}=myObg
+console.log(a1);
+console.log(r);

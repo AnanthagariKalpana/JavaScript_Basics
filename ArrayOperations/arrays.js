@@ -97,4 +97,10 @@ for(const char of str)
     console.log(char);
 }
 
+//flat()
+const a1=[1,2,["one","two"]];
+console.log(a1.flat());
+
+const a2=[1,2,["one","two",[5,6]]];
+console.log(a2.flat());
 
