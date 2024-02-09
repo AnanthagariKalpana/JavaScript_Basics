@@ -104,3 +104,6 @@ console.log(a1.flat());
 const a2=[1,2,["one","two",[5,6]]];
 console.log(a2.flat());
 
+
+const a3=["kalpana","nandhu",[459,499,[90,86]]]
+console.log(a3.flat(2));
