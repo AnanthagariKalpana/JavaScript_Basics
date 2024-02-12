@@ -117,7 +117,7 @@ const a5=["ab","","abc"]
 const s=a4.flatMap(s=>s.split(''))
 console.log(s);//op:[ 'a', 'b', 'a', 'b', 'c' ]
 
-//Induces().............
+//ES7 Induces().............
 let arr = ['react', 'angular', 'vue'];
  
 if (arr.includes('react'))
